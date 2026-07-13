@@ -14,4 +14,4 @@ Make optional Matrix mode feel black-first and deliberate instead of uniformly g
 
 ## Implementation and verification
 
-Change only Matrix-mode CSS tokens and glyph styling in `app/globals.css`, then verify contrast, desktop and mobile rendering, reduced motion, lint, tests, TypeScript, and production build.
+Change only Matrix-mode styling in `app/globals.css`: rebalance its tokens, quiet the glyphs, and replace the ticker and beyond chapter's large accent fills with dark surfaces. Then verify contrast, desktop and mobile rendering, reduced motion, lint, tests, TypeScript, and production build.

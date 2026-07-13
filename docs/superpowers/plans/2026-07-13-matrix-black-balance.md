@@ -43,4 +43,4 @@ Run `npm run verify`. Check Matrix mode at 1440 by 1000 and 390 by 844, confirm 
 
 - [ ] **Step 5: Commit and publish**
 
-Commit `app/globals.css` and this plan, push `main`, then verify the Vercel production URL returns HTTP 200 after the Git deployment completes.
+Commit `app/globals.css` and this plan, push the feature branch, merge its reviewed pull request into `main`, then verify the Vercel production URL returns HTTP 200 after the Git deployment completes.
