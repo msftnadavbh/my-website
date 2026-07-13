@@ -64,6 +64,8 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
+const themeScript = `try{if(localStorage.getItem("nadav-theme")==="matrix")document.documentElement.dataset.theme="matrix"}catch{}`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -73,7 +75,14 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${display.variable} ${body.variable} ${mono.variable}`}
+      suppressHydrationWarning
     >
+      <head>
+        <script
+          // biome-ignore lint/security/noDangerouslySetInnerHtml: Static pre-hydration theme script prevents a flash of the default theme.
+          dangerouslySetInnerHTML={{ __html: themeScript }}
+        />
+      </head>
       <body>{children}</body>
     </html>
   );

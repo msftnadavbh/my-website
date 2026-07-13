@@ -1,6 +1,22 @@
 import Image from "next/image";
 import { ProfileTerminal } from "@/components/profile-terminal";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { site } from "@/content/site";
+
+const matrixColumns = [
+  "0\n1\nAZURE\n01\nK8S\n10\nMCP\n1",
+  "KERNEL\n0\n1\nAKS\n10\n01\nAGENT",
+  "1\nMCP\n0\nBUILD\n01\nSHIP\n10",
+  "CLOUD\n10\n01\nSRE\n1\n0\nTRACE",
+  "01\nCODE\n10\nREVIEW\n0\n1\nFIX",
+  "LINUX\n1\n0\nBASH\n01\nKUBE\n10",
+  "AI\n10\nAGENT\n01\nTOOLS\n0\n1",
+  "0\nCOST\n1\nFINOPS\n10\n01\nSKU",
+  "GIT\n01\nPUSH\n10\nCI\n1\nCD",
+  "1\nNODE\n0\nPOD\n01\nREADY\n10",
+  "WISE\n10\nOWL\n01\nPROOF\n0\n1",
+  "SYS\n1\nARCH\n0\nRUN\n10\nOK",
+] as const;
 
 function ExternalLink({
   href,
@@ -64,6 +80,12 @@ export default function Home() {
         Skip to content
       </a>
 
+      <div className="matrix-rain" aria-hidden="true">
+        {matrixColumns.map((column) => (
+          <span key={column}>{column}</span>
+        ))}
+      </div>
+
       <header className="desktop-panel">
         <div className="desktop-panel__inner">
           <a className="panel-host" href="#top">
@@ -92,6 +114,7 @@ export default function Home() {
               ))}
             </ul>
           </nav>
+          <ThemeToggle />
           <div className="panel-status">
             <span>NET</span>
             <b>online</b>

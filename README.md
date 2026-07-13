@@ -74,12 +74,13 @@ The Wise Owl workflow image is copied from the [MIT-licensed Wise Owl repository
 - Minimum 44px interactive targets
 - High-contrast text and controls
 - Content remains available without the optional terminal interaction
-- Motion and smooth scrolling are disabled when `prefers-reduced-motion` is enabled
+- The optional Matrix mode is a real pressed-state button, persists locally, and never gates content
+- Motion and smooth scrolling are disabled when `prefers-reduced-motion` is enabled; Matrix glyphs become static
 - Responsive layouts are reflowed rather than scaled down
 
 ## Design rationale
 
-The site is a project-first technical showcase with the personality of a carefully customized Linux workstation. Mineral paper keeps it readable; aubergine panel chrome, warm orange, terminal green, package metadata, status output, and a small interactive shell make it personal without forcing visitors through command-line navigation. Real repository evidence takes priority over decorative generated imagery.
+The site is a project-first technical showcase with the personality of a carefully customized Linux workstation. Mineral paper keeps the default reading mode editorial; aubergine panel chrome, warm orange, terminal green, package metadata, status output, and a small interactive shell make it personal without forcing visitors through command-line navigation. An optional persisted Matrix mode turns the same system into a black-and-phosphor-green terminal joke, with deliberately faint falling glyphs and a static reduced-motion state. Real repository evidence takes priority over decorative generated imagery.
 
 ## License
 

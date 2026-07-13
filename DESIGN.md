@@ -25,6 +25,10 @@ The site is a project-first portfolio with details borrowed from a carefully cus
 
 Colors use OKLCH tokens in `app/globals.css`. Most of the page stays light; dark surfaces are concentrated where technical depth benefits from them.
 
+### Optional Matrix mode
+
+The workstation panel includes a compact `matrix` toggle. It swaps the semantic palette for black, layered deep green, and phosphor text while keeping every chapter, hierarchy, and interaction intact. A low-opacity field of falling system terms adds the joke without competing with the writing. The choice is stored only in local storage, is applied before hydration to prevent a flash, and freezes into a static texture when reduced motion is requested.
+
 ## Typography
 
 - Geologica: strong display hierarchy.
@@ -43,7 +47,7 @@ Wise Owl uses its real workflow image. AzurePricingMCP uses a structured MCP-cal
 
 ## Constraints
 
-- No fake desktop, boot delay, Linux logo, scanlines, Matrix effect, glass cards, or command-only navigation.
+- No fake desktop, boot delay, Linux logo, scanlines, glass cards, or command-only navigation.
 - No scraped portrait, generated portrait, copyrighted character artwork, or decorative AI illustration.
 - Normal document flow, external links, and core content work without terminal interaction.
 - Responsive layouts reflow at 960px and 720px with no horizontal overflow at 390px.
