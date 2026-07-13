@@ -28,26 +28,26 @@
 }
 
 html[data-theme="matrix"] {
-  --paper: oklch(0.075 0.021 145);
-  --paper-raised: oklch(0.095 0.03 145);
-  --paper-deep: oklch(0.12 0.04 145);
-  --ink: oklch(0.88 0.18 138);
-  --muted: oklch(0.68 0.11 138);
-  --aubergine: oklch(0.11 0.04 145);
-  --aubergine-deep: oklch(0.045 0.015 145);
-  --terminal: oklch(0.035 0.012 145);
-  --terminal-raised: oklch(0.075 0.025 145);
-  --light: oklch(0.91 0.19 138);
-  --light-muted: oklch(0.7 0.12 138);
-  --orange: oklch(0.83 0.21 138);
-  --orange-dark: oklch(0.69 0.17 138);
-  --green: oklch(0.88 0.23 138);
-  --green-dark: oklch(0.61 0.16 138);
-  --cyan: oklch(0.71 0.17 145);
-  --cyan-pale: oklch(0.105 0.035 145);
-  --yellow: oklch(0.82 0.2 138);
-  --line: oklch(0.3 0.075 138);
-  --line-dark: oklch(0.23 0.065 138);
+  --paper: oklch(0.045 0 0);
+  --paper-raised: oklch(0.065 0.004 145);
+  --paper-deep: oklch(0.085 0.006 145);
+  --ink: oklch(0.91 0.025 138);
+  --muted: oklch(0.69 0.025 138);
+  --aubergine: oklch(0.065 0.006 145);
+  --aubergine-deep: oklch(0.02 0 0);
+  --terminal: oklch(0 0 0);
+  --terminal-raised: oklch(0.05 0.006 145);
+  --light: oklch(0.94 0.02 138);
+  --light-muted: oklch(0.72 0.025 138);
+  --orange: oklch(0.82 0.19 138);
+  --orange-dark: oklch(0.69 0.13 138);
+  --green: oklch(0.85 0.21 138);
+  --green-dark: oklch(0.58 0.12 138);
+  --cyan: oklch(0.72 0.04 145);
+  --cyan-pale: oklch(0.08 0.005 145);
+  --yellow: oklch(0.79 0.15 138);
+  --line: oklch(0.28 0.035 138);
+  --line-dark: oklch(0.2 0.025 138);
 }
 
 * {
@@ -85,9 +85,9 @@ html[data-theme="matrix"] .matrix-rain {
 .matrix-rain span {
   color: var(--green);
   font: 600 clamp(0.45rem, 0.65vw, 0.65rem) / 2.2 var(--font-mono-stack);
-  opacity: 0.09;
+  opacity: 0.045;
   text-align: center;
-  text-shadow: 0 0 0.6rem var(--green);
+  text-shadow: 0 0 0.25rem var(--green);
   white-space: pre-line;
   animation: matrix-fall 18s linear infinite;
 }
@@ -413,6 +413,12 @@ pre {
   font-size: 0.62rem;
   font-weight: 600;
   white-space: nowrap;
+}
+
+html[data-theme="matrix"] .ticker {
+  border-color: var(--line);
+  background: var(--terminal-raised);
+  color: var(--light-muted);
 }
 
 .button {
@@ -1068,6 +1074,16 @@ html[data-theme="matrix"] .runbook > p {
 .beyond {
   background: var(--orange);
   color: var(--aubergine-deep);
+}
+
+html[data-theme="matrix"] .beyond {
+  background: var(--paper-deep);
+  color: var(--ink);
+}
+
+html[data-theme="matrix"] .beyond .path-line,
+html[data-theme="matrix"] .beyond .ascii-mark {
+  color: var(--light-muted);
 }
 .beyond .path-line {
   color: var(--aubergine-deep);

@@ -4,7 +4,7 @@
 
 **Goal:** Make Matrix mode black-first while retaining restrained phosphor-green accents.
 
-**Architecture:** Rebalance the existing semantic Matrix CSS tokens instead of adding selectors or components. Reduce only the decorative glyph layer's opacity and glow.
+**Architecture:** Rebalance the existing semantic Matrix CSS tokens and override the two large surfaces that reuse an accent token. Reduce only the decorative glyph layer's opacity and glow.
 
 **Tech Stack:** CSS, Next.js existing visual system
 
@@ -31,7 +31,7 @@ Run the production build locally and capture the hero at 1440 by 1000 pixels wit
 
 - [ ] **Step 2: Replace the Matrix token values**
 
-Use neutral black for `--terminal` and near-black values for page and raised surfaces. Set `--ink`, `--muted`, `--light`, and `--light-muted` to low-chroma gray-green values. Keep `--orange` and `--green` as the two phosphor accents.
+Use neutral black for `--terminal` and near-black values for page and raised surfaces. Set `--ink`, `--muted`, `--light`, and `--light-muted` to low-chroma gray-green values. Keep `--orange` and `--green` as the two phosphor accents, and make the ticker and beyond chapter use dark surfaces instead of accent fills.
 
 - [ ] **Step 3: Quiet the glyph layer**
 
