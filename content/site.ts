@@ -35,12 +35,6 @@ export type Recognition = {
   linkLabel: string;
 };
 
-export type ConsoleCommand = {
-  label: string;
-  prompt: string;
-  output: readonly string[];
-};
-
 export type SiteContent = {
   profile: {
     name: string;
@@ -52,7 +46,6 @@ export type SiteContent = {
     linkedin: string;
   };
   nav: readonly { label: string; href: string }[];
-  commands: readonly ConsoleCommand[];
   focus: {
     title: string;
     introduction: string;
@@ -80,47 +73,9 @@ export const site = {
   },
   nav: [
     { label: "Work", href: "#work" },
+    { label: "Focus", href: "#focus" },
     { label: "Journey", href: "#journey" },
-    { label: "Principles", href: "#principles" },
     { label: "Contact", href: "#contact" },
-  ],
-  commands: [
-    {
-      label: "whoami",
-      prompt: "profile --current",
-      output: [
-        "Senior Solution Engineer @ Microsoft",
-        "Digital Native customers · Azure · GitHub",
-        "Architecture that stays useful after deployment.",
-      ],
-    },
-    {
-      label: "focus",
-      prompt: "focus --active",
-      output: [
-        "Agentic software development + MCP",
-        "Kubernetes platforms + reliable delivery",
-        "Cloud cost intelligence + developer leverage",
-      ],
-    },
-    {
-      label: "builds",
-      prompt: "repos --selected",
-      output: [
-        "Wise Owl · independent code review",
-        "AzurePricingMCP · cloud cost tooling",
-        "Sayonara · ingress migration workflow",
-      ],
-    },
-    {
-      label: "sidequests",
-      prompt: "profile --off-hours",
-      output: [
-        "Salsa teacher · Japanese learner",
-        "Nintendo + anime nostalgia",
-        "Favorite electric mouse: the orange one.",
-      ],
-    },
   ],
   focus: {
     title: "Current focus",

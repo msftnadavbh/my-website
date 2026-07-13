@@ -8,9 +8,9 @@ export default function Icon() {
     <div
       style={{
         alignItems: "center",
-        background: "#171717",
-        border: "2px solid #739ce8",
-        color: "#f3f0e8",
+        background: "#23051f",
+        border: "2px solid #f25b19",
+        color: "#f5efe3",
         display: "flex",
         fontFamily: "monospace",
         fontSize: 24,
@@ -20,7 +20,7 @@ export default function Icon() {
         width: "100%",
       }}
     >
-      NB<span style={{ color: "#ddcd82" }}>/</span>
+      NB<span style={{ color: "#7ee787" }}>/</span>
     </div>,
     size,
   );

@@ -1,56 +1,50 @@
 # Design Direction
 
-## Concept: Systems in Motion
+## Concept: Linux-Native Technical Showcase
 
-The site moves through a working systems studio: a bright analysis space, a graphite instrument bench, a saturated cobalt signal field, a sulfur calibration sheet, and a vermilion human chapter. Color carries the narrative and hierarchy instead of decorating isolated labels.
+The site is a project-first portfolio with details borrowed from a carefully customized Linux workstation. Linux is personality, not the navigation model: visitors still read a normal page, while panel chrome, status states, package metadata, filesystem paths, aubergine, orange, and a small terminal reward technical familiarity.
 
-## Chapter sequence
+## Page sequence
 
-1. Cool white: name, positioning, and generated systems-workshop artwork.
-2. Graphite: the interactive terminal as a bridge into the technical work.
-3. Cobalt: current focus and the build-operate-iterate loop.
-4. Graphite: selected public projects and real repository evidence.
-5. Cool white: career progression and recognition.
-6. Sulfur: working principles.
-7. Vermilion: interests beyond engineering.
-8. Graphite: contact and footer.
+1. Slim workstation panel with normal page links.
+2. Human introduction, system summary, and optional terminal Easter egg.
+3. Selected Work led by real Wise Owl evidence and three distinct technical specimens.
+4. Active engineering focus presented as running services.
+5. Career progression presented as a readable journal.
+6. Working defaults beside a selective public record.
+7. Brief personal home directory and direct contact close.
 
 ## Palette
 
-- Graphite: technical depth, instruments, and closing surfaces.
-- Cool white: analysis, clarity, and breathing room.
-- Cobalt: architecture, connection, and system state.
-- Vermilion: energy, transitions, and personality.
-- Sulfur: calibration, emphasis, and primary actions.
+- Mineral paper: primary reading surface.
+- Aubergine: Linux workstation chrome and one technical chapter.
+- Warm orange: primary action and personality signal.
+- Terminal green: healthy state and command output.
+- Cyan: technical annotation and terminal depth.
+- Calibration yellow: small supporting emphasis.
 
-Colors use OKLCH tokens in `app/globals.css`. Every colored chapter has an explicit foreground instead of inheriting gray text.
+Colors use OKLCH tokens in `app/globals.css`. Most of the page stays light; dark surfaces are concentrated where technical depth benefits from them.
 
 ## Typography
 
-- Geologica: display and section headings.
-- Atkinson Hyperlegible Next: body copy.
-- Azeret Mono: technical labels and metadata.
+- Geologica: strong display hierarchy.
+- Atkinson Hyperlegible Next: comfortable long-form reading.
+- Azeret Mono: shell controls, paths, metadata, and machine state.
 
-Body copy stays near 68 characters per line. Display tracking never exceeds `-0.04em`, and monospace remains a technical detail rather than the site's default voice.
+Mono remains a technical accent rather than the default reading font.
 
-## Imagery
+## Terminal
 
-The hero uses one original generated still life: a physical systems workshop made from cobalt acrylic, graphite modules, metal paths, and yellow calibration markers. It is atmospheric artwork, not a product screenshot. Selected Work uses real repository imagery where evidence matters.
+The terminal is a secondary interactive joke with native form controls. It supports `help`, `whoami`, `uname -a`, `ls ~/projects`, `sudo hire nadav`, and `clear`. Suggested commands make it discoverable, unknown commands receive a shell-style response, and no page content or navigation depends on it.
 
-No portrait, scraped social media image, copyrighted character art, or generated project output is used. A second generated asset is unnecessary unless a future composition proves it adds narrative value.
+## Project evidence
 
-## Interaction and motion
+Wise Owl uses its real workflow image. AzurePricingMCP uses a structured MCP-call specimen, Sayonara uses a migration sequence, and Copilot Workshop uses a runbook. These visuals explain each project's shape without inventing live output or metrics.
 
-The terminal exposes `whoami`, `focus`, `builds`, and `sidequests` through native buttons. Its initial content remains complete and visible. Motion is limited to short state transitions and disabled when reduced motion is requested.
+## Constraints
 
-## Responsive behavior
-
-Desktop uses asymmetric copy and image compositions. Mobile returns to a direct vertical sequence: copy, artwork, terminal, then chapters. Content never depends on overlap, hover, or animation, and interaction targets remain at least 44px.
-
-## Visual constraints
-
-- No gradients, glow, glass blur, decorative grid overlays, or scanlines.
-- No copyrighted character artwork, logos, or sprites.
-- No repetitive pill clouds, identical card grids, or ornamental architecture diagrams.
-- No generated image may be mistaken for real project evidence.
-- Borders provide structure; shadows remain minimal.
+- No fake desktop, boot delay, Linux logo, scanlines, Matrix effect, glass cards, or command-only navigation.
+- No scraped portrait, generated portrait, copyrighted character artwork, or decorative AI illustration.
+- Normal document flow, external links, and core content work without terminal interaction.
+- Responsive layouts reflow at 960px and 720px with no horizontal overflow at 390px.
+- Motion is brief, optional, and disabled for reduced-motion preferences.

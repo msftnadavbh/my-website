@@ -9,8 +9,8 @@ export default function OpenGraphImage() {
   return new ImageResponse(
     <div
       style={{
-        background: "#f2f4f8",
-        color: "#151820",
+        background: "#f5efe3",
+        color: "#211713",
         display: "flex",
         fontFamily: "Arial, sans-serif",
         height: "100%",
@@ -21,7 +21,7 @@ export default function OpenGraphImage() {
     >
       <div
         style={{
-          background: "#123fb5",
+          background: "#23051f",
           display: "flex",
           height: "100%",
           position: "absolute",
@@ -31,7 +31,7 @@ export default function OpenGraphImage() {
       />
       <div
         style={{
-          background: "#151820",
+          background: "#071d24",
           bottom: 0,
           display: "flex",
           height: 170,
@@ -42,7 +42,7 @@ export default function OpenGraphImage() {
       />
       <div
         style={{
-          background: "#f2542d",
+          background: "#f25b19",
           display: "flex",
           height: 42,
           position: "absolute",
@@ -53,7 +53,7 @@ export default function OpenGraphImage() {
       />
       <div
         style={{
-          background: "#f5dc57",
+          background: "#7ee787",
           display: "flex",
           height: 96,
           position: "absolute",
@@ -76,7 +76,7 @@ export default function OpenGraphImage() {
         <div
           style={{
             alignItems: "center",
-            color: "#123fb5",
+            color: "#7e244f",
             display: "flex",
             fontFamily: "monospace",
             fontSize: 20,
@@ -102,7 +102,7 @@ export default function OpenGraphImage() {
           </div>
           <div
             style={{
-              color: "#4d5565",
+              color: "#65574f",
               display: "flex",
               fontSize: 31,
               lineHeight: 1.28,
@@ -114,8 +114,8 @@ export default function OpenGraphImage() {
         </div>
         <div
           style={{
-            borderTop: "2px solid #123fb5",
-            color: "#4d5565",
+            borderTop: "2px solid #f25b19",
+            color: "#65574f",
             display: "flex",
             fontFamily: "monospace",
             fontSize: 17,

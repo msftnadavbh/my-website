@@ -79,7 +79,7 @@ The Wise Owl workflow image is copied from the [MIT-licensed Wise Owl repository
 
 ## Design rationale
 
-The “systems workshop” direction combines an editorial portfolio with the legibility of technical instrumentation. Graphite surfaces, warm neutral text, an indigo diagnostic signal, and a restrained brass accent create a technical atmosphere without cyberpunk effects or corporate blue branding. Project layouts vary to reflect the real shape of each project instead of forcing everything into a generic card grid.
+The site is a project-first technical showcase with the personality of a carefully customized Linux workstation. Mineral paper keeps it readable; aubergine panel chrome, warm orange, terminal green, package metadata, status output, and a small interactive shell make it personal without forcing visitors through command-line navigation. Real repository evidence takes priority over decorative generated imagery.
 
 ## License
 
