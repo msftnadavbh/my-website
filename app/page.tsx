@@ -69,11 +69,19 @@ export default function Home() {
           <a className="panel-host" href="#top">
             <span aria-hidden="true">●</span> nadav@workstation
           </a>
-          <div className="workspaces" aria-hidden="true">
-            <span className="is-active">1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
+          <div className="workspaces">
+            <a href="#top" aria-label="Workspace 1: profile">
+              1
+            </a>
+            <a href="#work" aria-label="Workspace 2: selected work">
+              2
+            </a>
+            <a href="#focus" aria-label="Workspace 3: current focus">
+              3
+            </a>
+            <a href="#journey" aria-label="Workspace 4: career journey">
+              4
+            </a>
           </div>
           <nav aria-label="Primary navigation">
             <ul>

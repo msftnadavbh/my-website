@@ -174,15 +174,17 @@ pre {
   gap: 0.3rem;
   font: 0.62rem var(--font-mono-stack);
 }
-.workspaces span {
+.workspaces a {
   display: grid;
   width: 1.65rem;
   height: 1.65rem;
   place-items: center;
   border: 1px solid var(--line-dark);
   color: var(--light-muted);
+  text-decoration: none;
 }
-.workspaces .is-active {
+.workspaces a:hover,
+.workspaces a:focus-visible {
   border-color: var(--orange);
   background: var(--orange);
   color: var(--aubergine-deep);
