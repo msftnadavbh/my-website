@@ -9,70 +9,123 @@ export default function OpenGraphImage() {
   return new ImageResponse(
     <div
       style={{
-        background: "#171717",
-        color: "#f3f0e8",
+        background: "#f2f4f8",
+        color: "#151820",
         display: "flex",
-        flexDirection: "column",
         fontFamily: "Arial, sans-serif",
         height: "100%",
-        justifyContent: "space-between",
-        padding: "68px 76px",
+        overflow: "hidden",
+        position: "relative",
         width: "100%",
       }}
     >
       <div
         style={{
-          alignItems: "center",
-          color: "#ddcd82",
+          background: "#123fb5",
           display: "flex",
-          fontFamily: "monospace",
-          fontSize: 22,
-          justifyContent: "space-between",
-          width: "100%",
+          height: "100%",
+          position: "absolute",
+          right: 0,
+          width: 360,
         }}
-      >
-        <span>NB/</span>
-        <span>Senior Solution Engineer · Microsoft</span>
-      </div>
-      <div style={{ display: "flex", flexDirection: "column", maxWidth: 980 }}>
-        <div
-          style={{
-            display: "flex",
-            fontSize: 72,
-            fontWeight: 700,
-            letterSpacing: "-3px",
-            lineHeight: 1,
-            marginBottom: 30,
-          }}
-        >
-          Nadav Ben-Haim
-        </div>
-        <div
-          style={{
-            color: "#b9b5ad",
-            display: "flex",
-            fontSize: 34,
-            lineHeight: 1.3,
-          }}
-        >
-          Cloud platforms, developer tools, and AI workflows for the point where
-          the diagram meets production.
-        </div>
-      </div>
+      />
       <div
         style={{
-          borderTop: "2px solid #739ce8",
-          color: "#b9b5ad",
+          background: "#151820",
+          bottom: 0,
           display: "flex",
-          fontFamily: "monospace",
-          fontSize: 18,
+          height: 170,
+          position: "absolute",
+          right: 0,
+          width: 520,
+        }}
+      />
+      <div
+        style={{
+          background: "#f2542d",
+          display: "flex",
+          height: 42,
+          position: "absolute",
+          right: 330,
+          top: 130,
+          width: 42,
+        }}
+      />
+      <div
+        style={{
+          background: "#f5dc57",
+          display: "flex",
+          height: 96,
+          position: "absolute",
+          right: 80,
+          top: 78,
+          width: 156,
+        }}
+      />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          height: "100%",
           justifyContent: "space-between",
-          paddingTop: 20,
-          width: "100%",
+          padding: "60px 68px",
+          position: "relative",
+          width: 790,
         }}
       >
-        <span>Azure · Kubernetes · AI · Developer Productivity</span>
-        <span>github.com/msftnadavbh</span>
+        <div
+          style={{
+            alignItems: "center",
+            color: "#123fb5",
+            display: "flex",
+            fontFamily: "monospace",
+            fontSize: 20,
+            justifyContent: "space-between",
+            width: "100%",
+          }}
+        >
+          <span>NB/</span>
+          <span>Senior Solution Engineer · Microsoft</span>
+        </div>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div
+            style={{
+              display: "flex",
+              fontSize: 72,
+              fontWeight: 700,
+              letterSpacing: "-3px",
+              lineHeight: 1,
+              marginBottom: 30,
+            }}
+          >
+            Nadav Ben-Haim
+          </div>
+          <div
+            style={{
+              color: "#4d5565",
+              display: "flex",
+              fontSize: 31,
+              lineHeight: 1.28,
+            }}
+          >
+            Cloud platforms, developer tools, and AI workflows for the point
+            where the diagram meets production.
+          </div>
+        </div>
+        <div
+          style={{
+            borderTop: "2px solid #123fb5",
+            color: "#4d5565",
+            display: "flex",
+            fontFamily: "monospace",
+            fontSize: 17,
+            justifyContent: "space-between",
+            paddingTop: 18,
+            width: "100%",
+          }}
+        >
+          <span>Azure · Kubernetes · AI · Developer Productivity</span>
+        </div>
       </div>
     </div>,
     size,

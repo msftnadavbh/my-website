@@ -1,19 +1,29 @@
 # Design Direction
 
-## Concept: Systems Workshop
+## Concept: Systems in Motion
 
-The visual language takes cues from an after-hours engineering lab: graphite instrument panels, calm ivory documentation, indigo diagnostic signals, and pale brass calibration labels. The result should feel precise and warm rather than corporate, neon, or nostalgic for nostalgia's sake.
+The site moves through a working systems studio: a bright analysis space, a graphite instrument bench, a saturated cobalt signal field, a sulfur calibration sheet, and a vermilion human chapter. Color carries the narrative and hierarchy instead of decorating isolated labels.
+
+## Chapter sequence
+
+1. Cool white: name, positioning, and generated systems-workshop artwork.
+2. Graphite: the interactive terminal as a bridge into the technical work.
+3. Cobalt: current focus and the build-operate-iterate loop.
+4. Graphite: selected public projects and real repository evidence.
+5. Cool white: career progression and recognition.
+6. Sulfur: working principles.
+7. Vermilion: interests beyond engineering.
+8. Graphite: contact and footer.
 
 ## Palette
 
-- Foundation: `oklch(0.105 0 0)`
-- Surface: `oklch(0.155 0.008 252)`
-- Primary text: `oklch(0.94 0.008 85)`
-- Muted text: `oklch(0.72 0.012 85)`
-- Signal: `oklch(0.68 0.15 252)`
-- Calibration accent: `oklch(0.88 0.09 85)`
+- Graphite: technical depth, instruments, and closing surfaces.
+- Cool white: analysis, clarity, and breathing room.
+- Cobalt: architecture, connection, and system state.
+- Vermilion: energy, transitions, and personality.
+- Sulfur: calibration, emphasis, and primary actions.
 
-The signal color is used for rules, links, and system state. The pale brass accent is reserved for the primary call to action and select labels with dark text.
+Colors use OKLCH tokens in `app/globals.css`. Every colored chapter has an explicit foreground instead of inheriting gray text.
 
 ## Typography
 
@@ -21,26 +31,26 @@ The signal color is used for rules, links, and system state. The pale brass acce
 - Atkinson Hyperlegible Next: body copy.
 - Azeret Mono: technical labels and metadata.
 
-Typography carries most of the hierarchy. Labels are used sparingly, body copy stays near 68 characters per line, and the main heading never relies on decorative effects.
+Body copy stays near 68 characters per line. Display tracking never exceeds `-0.04em`, and monospace remains a technical detail rather than the site's default voice.
 
-## Layout
+## Imagery
 
-- Maximum content width: 76rem.
-- Hero: editorial statement paired with a useful profile terminal.
-- Current focus: a compact systems loop rather than a keyword cloud.
-- Selected work: varied project treatments based on each project's real structure.
-- Career: one readable ordered progression.
-- Principles and recognition: ruled rows, not card grids.
-- Mobile: all diagrams become linear reading sequences; primary actions remain at least 44px tall.
+The hero uses one original generated still life: a physical systems workshop made from cobalt acrylic, graphite modules, metal paths, and yellow calibration markers. It is atmospheric artwork, not a product screenshot. Selected Work uses real repository imagery where evidence matters.
+
+No portrait, scraped social media image, copyrighted character art, or generated project output is used. A second generated asset is unnecessary unless a future composition proves it adds narrative value.
 
 ## Interaction and motion
 
-The terminal exposes four direct profile views: `whoami`, `focus`, `builds`, and `sidequests`. Its initial state is complete and visible, and controls use native buttons. Motion is limited to short state transitions and is disabled when reduced motion is requested.
+The terminal exposes `whoami`, `focus`, `builds`, and `sidequests` through native buttons. Its initial content remains complete and visible. Motion is limited to short state transitions and disabled when reduced motion is requested.
+
+## Responsive behavior
+
+Desktop uses asymmetric copy and image compositions. Mobile returns to a direct vertical sequence: copy, artwork, terminal, then chapters. Content never depends on overlap, hover, or animation, and interaction targets remain at least 44px.
 
 ## Visual constraints
 
 - No gradients, glow, glass blur, decorative grid overlays, or scanlines.
-- No portrait or scraped social media media.
 - No copyrighted character artwork, logos, or sprites.
 - No repetitive pill clouds, identical card grids, or ornamental architecture diagrams.
+- No generated image may be mistaken for real project evidence.
 - Borders provide structure; shadows remain minimal.
