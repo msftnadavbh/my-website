@@ -43,7 +43,7 @@ The terminal is a secondary interactive joke with native form controls. It suppo
 
 ## Project evidence
 
-Wise Owl uses its real workflow image. AzurePricingMCP uses a structured MCP-call specimen, Sayonara uses a migration sequence, and Copilot Workshop uses a runbook. These visuals explain each project's shape without inventing live output or metrics.
+Wise Owl uses its real workflow image. AzurePricingMCP uses a structured MCP-call specimen, Sayonara uses a migration sequence, and GHAS Zero to Hero Workshop uses a runbook. These visuals explain each project's shape without inventing live output or metrics.
 
 ## Constraints
 

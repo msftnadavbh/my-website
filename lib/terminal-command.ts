@@ -17,7 +17,9 @@ const output = {
     "NadavOS cloud-native #1 SMP PREEMPT_DYNAMIC",
     "azure/aks · github · ai-agents · x86_64-curious",
   ],
-  "ls ~/projects": ["wiseowl/  AzurePricingMCP/  Sayonara/  copilot-workshop/"],
+  "ls ~/projects": [
+    "wiseowl/  AzurePricingMCP/  Sayonara/  ghas-workshop-zero2hero/",
+  ],
   "cat /etc/motd": [
     "Build the complicated thing. Keep the interface boring.",
     "Production gets the final vote.",
