@@ -34,7 +34,7 @@ test("returns Linux-flavored profile and project output", () => {
     "azure/aks · github · ai-agents · x86_64-curious",
   ]);
   assert.deepEqual(runTerminalCommand("ls ~/projects"), [
-    "wiseowl/  AzurePricingMCP/  Sayonara/  copilot-workshop/",
+    "wiseowl/  AzurePricingMCP/  Sayonara/  ghas-workshop-zero2hero/",
   ]);
 });
 
