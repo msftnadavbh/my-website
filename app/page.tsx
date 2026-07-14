@@ -177,11 +177,11 @@ export default function Home() {
             </aside>
           </div>
           <div className="ticker" aria-hidden="true">
-            <span>AZURE</span>
-            <span>KUBERNETES</span>
-            <span>PLATFORM ENGINEERING</span>
-            <span>AI AGENTS</span>
-            <span>DEVELOPER PRODUCTIVITY</span>
+            <span>PRODUCTION HAS VETO POWER</span>
+            <span>AI OUTPUT NEEDS A REVIEWER</span>
+            <span>COST IS ARCHITECTURE</span>
+            <span>AUTOMATE THE REPETITION</span>
+            <span>PRESERVE THE REASONING</span>
           </div>
         </section>
 
@@ -206,7 +206,7 @@ export default function Home() {
               <div className="feature-project__copy">
                 <div className="window-title">
                   <span aria-hidden="true">● ● ●</span>
-                  <p>wiseowl — review control</p>
+                  <p>wiseowl: review control</p>
                 </div>
                 <p className="project__role">{wiseOwl.role}</p>
                 <h3>{wiseOwl.name}</h3>
@@ -462,12 +462,15 @@ export default function Home() {
             <pre
               className="ascii-mark"
               aria-hidden="true"
-            >{`┌─ /home/nadav ────────┐
-│ dance.step()          │
-│ teach.share()         │
-│ build.for_fun()       │
-│ curiosity++           │
-└───────────────────────┘`}</pre>
+            >{`┌─ fastfetch --human ──┐
+│ dance       salsa      │
+│ locale      ja-student │
+│ types       electric / │
+│             ghost      │
+│ controller  well-worn  │
+│ builds      ambitious  │
+│             → real     │
+└────────────────────────┘`}</pre>
           </div>
         </section>
 
@@ -508,7 +511,12 @@ export default function Home() {
           <p>
             © {new Date().getFullYear()} {site.profile.name}
           </p>
-          <p>uptime: curious since boot · telemetry: disabled</p>
+          <p className="site-footer__status">
+            uptime: curious since boot · telemetry: disabled
+          </p>
+          <ExternalLink href="https://github.com/msftnadavbh/my-website">
+            view source
+          </ExternalLink>
         </div>
       </footer>
       <script // biome-ignore lint/security/noDangerouslySetInnerHtml: Closed static schema with '<' escaped before injection.

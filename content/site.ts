@@ -164,7 +164,7 @@ export const site = {
       summary:
         "A command-line migration workflow for moving AKS applications from NGINX Ingress to Gateway API using Application Gateway for Containers or Envoy Gateway.",
       problem:
-        "Ingress migration is a sequence of discovery, compatibility decisions, manifest conversion, and production validation—not a search-and-replace exercise.",
+        "Ingress migration is a sequence of discovery, compatibility decisions, manifest conversion, and production validation. It is not a search-and-replace exercise.",
       why: "The tool makes that sequence visible and reversible, including audit and validation stages plus an explicit rollback path.",
       technologies: ["Python", "Kubernetes", "AKS", "Gateway API"],
       metadata: ["v1.0.0 beta", "CLI workflow", "Python 3.10+"],
@@ -199,7 +199,7 @@ export const site = {
   ],
   experience: [
     {
-      period: "2017—2019",
+      period: "2017 to 2019",
       title: "Support escalation",
       organization: "Microsoft Azure Rapid Response",
       summary:
@@ -208,7 +208,7 @@ export const site = {
         "https://www.linkedin.com/pulse/working-microsoft-dreamersstory-nadav-ben-haim",
     },
     {
-      period: "2019—2022",
+      period: "2019 to 2022",
       title: "Cloud solution architecture",
       organization: "Microsoft Customer Success",
       summary:
@@ -217,7 +217,7 @@ export const site = {
         "https://www.linkedin.com/pulse/fasttrack-azure-your-next-career-step-nadav-ben-haim",
     },
     {
-      period: "2022—2025",
+      period: "2022 to 2025",
       title: "FastTrack engineering and Azure reliability",
       organization: "Microsoft Azure CXP",
       summary:
@@ -235,7 +235,7 @@ export const site = {
         "https://www.linkedin.com/posts/nadavbh_who-wouldve-thought-in-2-months-ill-activity-7301863799953747968-oYHv",
     },
     {
-      period: "2025—Now",
+      period: "2025 to now",
       title: "Senior Solution Engineer",
       organization: "Microsoft, Digital Natives",
       summary:
@@ -251,7 +251,7 @@ export const site = {
     },
     {
       title: "Bring evidence into the room.",
-      text: "Treat tests, telemetry, and independent review as engineering inputs—not ceremony.",
+      text: "Treat tests, telemetry, and independent review as engineering inputs, not ceremony.",
     },
     {
       title: "Automate the repetition, preserve the reasoning.",
@@ -307,5 +307,5 @@ export const site = {
     },
   ],
   beyond:
-    "Beyond engineering, Nadav teaches salsa, studies Japanese, and keeps a soft spot for Nintendo, Pokémon, anime, and Japan. Raichu and Gengar are the favorites.",
+    "Beyond engineering, Nadav teaches salsa, studies Japanese, and keeps a soft spot for retro handhelds, creature-collecting games, anime, and Japan. Some of the best prototypes start as ideas that sound slightly unreasonable.",
 } as const satisfies SiteContent;

@@ -1,4 +1,4 @@
-# Nadav Ben-Haim — Personal Site
+# Nadav Ben-Haim: Personal Site
 
 A focused personal website for Nadav Ben-Haim, Senior Solution Engineer at Microsoft. The site presents his work across cloud architecture, Kubernetes, reliability, developer productivity, and AI-assisted engineering through verified public projects and career material.
 

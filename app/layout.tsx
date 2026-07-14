@@ -29,7 +29,7 @@ const mono = Azeret_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Nadav Ben-Haim — Cloud, Kubernetes, AI & Developer Tools",
+  title: "Nadav Ben-Haim | Cloud, Kubernetes, AI & Developer Tools",
   description:
     "Senior Solution Engineer at Microsoft building cloud platforms, developer tools, and reliable AI-assisted engineering workflows.",
   alternates: { canonical: "/" },
@@ -38,14 +38,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "profile",
     url: "/",
-    title: "Nadav Ben-Haim — Systems that work beyond the diagram",
+    title: "Nadav Ben-Haim | Systems that work beyond the diagram",
     description:
       "Cloud architecture, Kubernetes platforms, developer productivity, and AI-assisted engineering.",
     siteName: site.profile.name,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nadav Ben-Haim — Systems that work beyond the diagram",
+    title: "Nadav Ben-Haim | Systems that work beyond the diagram",
     description:
       "Cloud architecture, Kubernetes platforms, developer productivity, and AI-assisted engineering.",
   },

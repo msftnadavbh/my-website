@@ -1150,6 +1150,43 @@ html[data-theme="matrix"] .beyond .ascii-mark {
 .site-footer p {
   margin: 0;
 }
+.site-footer a {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  color: var(--green);
+}
+
+.not-found {
+  display: grid;
+  min-height: 100svh;
+  padding: clamp(1rem, 5vw, 4rem);
+  place-items: center;
+  background: var(--paper);
+}
+.not-found__terminal {
+  width: min(100%, 58rem);
+  overflow: hidden;
+  padding: clamp(2rem, 6vw, 5rem);
+  border: 1px solid var(--terminal);
+  background: var(--terminal);
+  color: var(--light);
+  box-shadow: 0.55rem 0.55rem 0 var(--cyan);
+}
+.not-found__terminal .window-title {
+  margin: calc(clamp(2rem, 6vw, 5rem) * -1) calc(clamp(2rem, 6vw, 5rem) * -1)
+    clamp(2rem, 5vw, 4rem);
+}
+.not-found__terminal h1 {
+  max-width: 12ch;
+  font-size: clamp(3rem, 9vw, 6rem);
+  letter-spacing: -0.04em;
+}
+.not-found__terminal > p:not(.path-line) {
+  max-width: 48ch;
+  margin-bottom: 2rem;
+  color: var(--light-muted);
+}
 
 @media (max-width: 960px) {
   .desktop-panel__inner {
@@ -1309,6 +1346,9 @@ html[data-theme="matrix"] .beyond .ascii-mark {
   .site-footer .shell {
     min-height: 8rem;
     justify-content: center;
+  }
+  .site-footer__status {
+    order: 3;
   }
 }
 
