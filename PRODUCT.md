@@ -1,4 +1,4 @@
-# Nadav Ben-Haim — Personal Site
+# Nadav Ben-Haim: Personal Site
 
 ## Purpose
 
