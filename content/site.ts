@@ -35,6 +35,12 @@ export type Recognition = {
   linkLabel: string;
 };
 
+export type Pursuit = {
+  path: string;
+  title: string;
+  text: string;
+};
+
 export type SiteContent = {
   profile: {
     name: string;
@@ -42,6 +48,7 @@ export type SiteContent = {
     organization: string;
     headline: string;
     introduction: string;
+    systemSummary: readonly { label: string; value: string }[];
     github: string;
     linkedin: string;
   };
@@ -56,7 +63,10 @@ export type SiteContent = {
   experience: readonly Experience[];
   principles: readonly { title: string; text: string }[];
   recognition: readonly Recognition[];
-  beyond: string;
+  beyond: {
+    introduction: string;
+    pursuits: readonly Pursuit[];
+  };
 };
 
 export const site = {
@@ -68,6 +78,12 @@ export const site = {
       "I build cloud platforms, developer tools, and AI workflows for the point where the diagram meets production.",
     introduction:
       "Senior Solution Engineer at Microsoft, working with Digital Native customers across Azure, GitHub, Kubernetes, and AI.",
+    systemSummary: [
+      { label: "work", value: "cloud platforms + developer tools" },
+      { label: "teaches", value: "systems + salsa" },
+      { label: "learning", value: "Japanese, one session at a time" },
+      { label: "mode", value: "curious / practical / production-minded" },
+    ],
     github: "https://github.com/msftnadavbh",
     linkedin: "https://www.linkedin.com/in/nadavbh",
   },
@@ -318,6 +334,25 @@ export const site = {
       linkLabel: "LinkedIn profile",
     },
   ],
-  beyond:
-    "Beyond engineering, Nadav teaches salsa, studies Japanese, and keeps a soft spot for retro handhelds, creature-collecting games, anime, and Japan. Some of the best prototypes start as ideas that sound slightly unreasonable.",
+  beyond: {
+    introduction:
+      "Beyond engineering, Nadav keeps a few deliberate loops running. They are different practices with the same preference for curiosity, feedback, and getting better in public.",
+    pursuits: [
+      {
+        path: "~/after-hours/salsa",
+        title: "Salsa teacher",
+        text: "Teaching salsa keeps timing, feedback, and the room itself in the loop.",
+      },
+      {
+        path: "~/learning/ja",
+        title: "Japanese student",
+        text: "Studying Japanese is a long-running lesson in consistency, context, and being comfortable as a beginner.",
+      },
+      {
+        path: "~/play/retro",
+        title: "Retro systems enthusiast",
+        text: "Handhelds, creature-collecting games, anime, and unreasonable prototypes keep curiosity from becoming too professional.",
+      },
+    ],
+  },
 } as const satisfies SiteContent;

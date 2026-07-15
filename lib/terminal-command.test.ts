@@ -5,7 +5,17 @@ import { runTerminalCommand } from "./terminal-command.ts";
 test("lists the small supported command set", () => {
   assert.deepEqual(runTerminalCommand("help"), [
     "help · whoami · man nadav · uname -a",
-    "ls ~/projects · cat /etc/motd · uptime · fortune · clear",
+    "ls ~/projects · cat ~/now · ls ~/after-hours · cat /etc/motd · uptime · fortune · clear",
+  ]);
+});
+
+test("surfaces current and after-hours profile signals", () => {
+  assert.deepEqual(runTerminalCommand("cat ~/now"), [
+    "building: cloud platforms · developer tools · AI workflows",
+    "teaching: salsa · learning: Japanese",
+  ]);
+  assert.deepEqual(runTerminalCommand("ls ~/after-hours"), [
+    "salsa/  japanese/  retro-handhelds/  anime/  unreasonable-prototypes/",
   ]);
 });
 

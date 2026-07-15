@@ -89,7 +89,8 @@ export default function Home() {
       <header className="desktop-panel">
         <div className="desktop-panel__inner">
           <a className="panel-host" href="#top">
-            <span aria-hidden="true">●</span> nadav@workstation
+            <span aria-hidden="true">●</span>
+            <span className="panel-host__label">nadav@workstation</span>
           </a>
           <div className="workspaces">
             <a href="#top" aria-label="Workspace 1: profile">
@@ -156,32 +157,22 @@ export default function Home() {
                 className="system-summary"
                 aria-label="Technical summary"
               >
-                <p>
-                  <span>host</span>
-                  <strong>cloud-native</strong>
-                </p>
-                <p>
-                  <span>shell</span>
-                  <strong>architecture + implementation</strong>
-                </p>
-                <p>
-                  <span>active</span>
-                  <strong>AKS · AI agents · developer tools</strong>
-                </p>
-                <p>
-                  <span>mode</span>
-                  <strong>curious / practical</strong>
-                </p>
+                {site.profile.systemSummary.map((item) => (
+                  <p key={item.label}>
+                    <span>{item.label}</span>
+                    <strong>{item.value}</strong>
+                  </p>
+                ))}
               </section>
               <ProfileTerminal />
             </aside>
           </div>
           <div className="ticker" aria-hidden="true">
             <span>PRODUCTION HAS VETO POWER</span>
-            <span>AI OUTPUT NEEDS A REVIEWER</span>
-            <span>COST IS ARCHITECTURE</span>
+            <span>SALSA COUNTS IN EIGHTS</span>
+            <span>JAPANESE: STUDYING</span>
             <span>AUTOMATE THE REPETITION</span>
-            <span>PRESERVE THE REASONING</span>
+            <span>KEEP THE WEIRD PROTOTYPE</span>
           </div>
         </section>
 
@@ -264,7 +255,6 @@ export default function Home() {
   "signal": "cost + availability"
 }`}</code>
                 </pre>
-                <p>{pricing.why}</p>
                 <TechnologyList values={pricing.technologies} />
                 <ProjectMeta values={pricing.metadata} />
                 <ExternalLink
@@ -295,7 +285,6 @@ export default function Home() {
                     </li>
                   ))}
                 </ol>
-                <p>{sayonara.why}</p>
                 <TechnologyList values={sayonara.technologies} />
                 <ProjectMeta values={sayonara.metadata} />
                 <ExternalLink
@@ -323,7 +312,6 @@ export default function Home() {
                     ))}
                   </ol>
                 </div>
-                <p>{workshop.why}</p>
                 <TechnologyList values={workshop.technologies} />
                 <ProjectMeta values={workshop.metadata} />
                 <ExternalLink
@@ -457,20 +445,17 @@ export default function Home() {
             <div className="beyond__copy">
               <p className="path-line">/home/nadav</p>
               <h2 id="beyond-heading">More than the work account.</h2>
-              <p className="beyond__text">{site.beyond}</p>
+              <p className="beyond__text">{site.beyond.introduction}</p>
             </div>
-            <pre
-              className="ascii-mark"
-              aria-hidden="true"
-            >{`┌─ fastfetch --human ──┐
-│ dance       salsa      │
-│ locale      ja-student │
-│ types       electric / │
-│             ghost      │
-│ controller  well-worn  │
-│ builds      ambitious  │
-│             → real     │
-└────────────────────────┘`}</pre>
+            <div className="pursuits">
+              {site.beyond.pursuits.map((pursuit) => (
+                <article key={pursuit.path} className="pursuit">
+                  <p className="pursuit__path">{pursuit.path}</p>
+                  <h3>{pursuit.title}</h3>
+                  <p className="pursuit__text">{pursuit.text}</p>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 

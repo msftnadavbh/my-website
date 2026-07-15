@@ -1,7 +1,7 @@
 const output = {
   help: [
     "help · whoami · man nadav · uname -a",
-    "ls ~/projects · cat /etc/motd · uptime · fortune · clear",
+    "ls ~/projects · cat ~/now · ls ~/after-hours · cat /etc/motd · uptime · fortune · clear",
   ],
   whoami: [
     "Nadav Ben-Haim · Senior Solution Engineer @ Microsoft",
@@ -19,6 +19,13 @@ const output = {
   ],
   "ls ~/projects": [
     "wiseowl/  AzurePricingMCP/  Sayonara/  ghas-workshop-zero2hero/",
+  ],
+  "cat ~/now": [
+    "building: cloud platforms · developer tools · AI workflows",
+    "teaching: salsa · learning: Japanese",
+  ],
+  "ls ~/after-hours": [
+    "salsa/  japanese/  retro-handhelds/  anime/  unreasonable-prototypes/",
   ],
   "cat /etc/motd": [
     "Build the complicated thing. Keep the interface boring.",
