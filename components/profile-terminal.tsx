@@ -3,7 +3,12 @@
 import { type FormEvent, useState } from "react";
 import { runTerminalCommand } from "@/lib/terminal-command";
 
-const suggestions = ["whoami", "man nadav", "ls ~/projects", "cat /etc/motd"];
+const suggestions = [
+  "whoami",
+  "cat ~/now",
+  "ls ~/projects",
+  "ls ~/after-hours",
+];
 
 export function ProfileTerminal() {
   const [command, setCommand] = useState("");

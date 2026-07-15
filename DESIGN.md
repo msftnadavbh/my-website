@@ -7,7 +7,7 @@ The site is a project-first portfolio with details borrowed from a carefully cus
 ## Page sequence
 
 1. Slim workstation panel with normal page links.
-2. Human introduction, system summary, and optional terminal Easter egg.
+2. Human introduction, a mixed professional/personal system summary, and an optional terminal Easter egg.
 3. Selected Work led by real Wise Owl evidence and three distinct technical specimens.
 4. Active engineering focus presented as running services.
 5. Career progression presented as a readable journal.
@@ -39,11 +39,11 @@ Mono remains a technical accent rather than the default reading font.
 
 ## Terminal
 
-The terminal is a secondary interactive joke with native form controls. It supports `help`, `whoami`, `uname -a`, `ls ~/projects`, `sudo hire nadav`, and `clear`. Suggested commands make it discoverable, unknown commands receive a shell-style response, and no page content or navigation depends on it.
+The terminal is a secondary interactive joke with native form controls. It supports `help`, `whoami`, `uname -a`, `ls ~/projects`, `cat ~/now`, `ls ~/after-hours`, `sudo hire nadav`, and `clear`. Suggested commands make it discoverable, unknown commands receive a shell-style response, and no page content or navigation depends on it.
 
 ## Project evidence
 
-Wise Owl uses its real workflow image. AzurePricingMCP uses a structured MCP-call specimen, Sayonara uses a migration sequence, and GHAS Zero to Hero Workshop uses a runbook. These visuals explain each project's shape without inventing live output or metrics.
+Wise Owl uses its real workflow image. AzurePricingMCP uses a structured MCP-call specimen, Sayonara uses a migration sequence, and GHAS Zero to Hero Workshop uses a runbook. These visuals explain each project's shape without inventing live output or metrics. The personal chapter presents salsa, Japanese study, and retro-system interests as readable after-hours pursuits rather than decorative desktop art.
 
 ## Constraints
 
