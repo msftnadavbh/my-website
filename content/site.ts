@@ -94,29 +94,29 @@ export const site = {
     { label: "Contact", href: "#contact" },
   ],
   focus: {
-    title: "Current focus",
+    title: "How the work moves.",
     introduction:
-      "The interesting work is rarely one technology. It is the loop that connects constraints, delivery, operations, and what the team learns next.",
+      "Start with the constraint. Make the trade-off explicit. Build the path. Watch it in production. Feed the evidence into the next decision.",
     loop: [
       {
-        title: "Constraints + cost",
-        text: "Start with the real workload, team, risk, and economic boundaries.",
+        title: "Frame the system",
+        text: "Start with the real workload, team, risk, cost, and operating boundaries.",
       },
       {
-        title: "Architecture",
-        text: "Turn those boundaries into explicit system decisions and trade-offs.",
+        title: "Make the trade-offs explicit",
+        text: "Turn those constraints into decisions people can inspect, question, and change.",
       },
       {
-        title: "Platform + delivery",
-        text: "Build the paved road, automation, and feedback paths developers actually use.",
+        title: "Build the path people use",
+        text: "Ship the paved road, automation, and feedback paths developers actually use.",
       },
       {
-        title: "Reliability signals",
-        text: "Observe behavior in production and make operability part of the design.",
+        title: "Observe production behavior",
+        text: "Watch the system in production and make operability part of the design.",
       },
       {
-        title: "Review + learning",
-        text: "Use evidence, independent review, and incidents to update the next decision.",
+        title: "Feed evidence back",
+        text: "Use telemetry, independent review, and incidents to improve the next decision.",
       },
     ],
     interests: [

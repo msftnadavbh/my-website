@@ -189,8 +189,7 @@ pre {
 .window-title,
 .system-summary,
 .ticker,
-.service-state,
-.service-index,
+.loop-index,
 .pursuit__path,
 .site-footer {
   font-family: var(--font-mono-stack);
@@ -928,35 +927,57 @@ html[data-theme="matrix"] .runbook > p {
   font-size: 0.62rem;
   line-height: 2;
 }
-.service-list {
+.interest-line span {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--orange);
+}
+.operating-loop {
+  position: relative;
   margin: 0;
   padding: 0;
   border-top: 1px solid var(--line-dark);
   list-style: none;
 }
-.service-list li {
+.operating-loop::before {
+  position: absolute;
+  top: 2.95rem;
+  bottom: 2.95rem;
+  left: 1.35rem;
+  width: 1px;
+  background: var(--line-dark);
+  content: "";
+}
+.operating-loop li {
+  position: relative;
   display: grid;
   padding-block: 1.6rem;
-  grid-template-columns: 4rem 2rem 1fr;
-  gap: 1rem;
+  align-items: start;
+  grid-template-columns: 3rem 1fr;
+  gap: 1.25rem;
   border-bottom: 1px solid var(--line-dark);
 }
-.service-state {
-  color: var(--green);
-  font-size: 0.56rem;
-}
-.service-state::before {
-  margin-right: 0.35rem;
-  content: "●";
-}
-.service-index {
+.loop-index {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  border: 1px solid var(--line-dark);
+  background: var(--aubergine);
   color: var(--orange);
   font-size: 0.6rem;
 }
-.service-list h3 {
+.operating-loop li:last-child .loop-index {
+  border-color: var(--green);
+  background: var(--green);
+  color: var(--aubergine-deep);
+}
+.operating-loop h3 {
   font-size: clamp(1.2rem, 2vw, 1.75rem);
 }
-.service-list p {
+.operating-loop p {
   margin: 0;
   color: var(--light-muted);
 }
@@ -1346,10 +1367,10 @@ html[data-theme="matrix"] .beyond .path-line {
   .project-card--workshop {
     grid-template-columns: 1fr;
   }
-  .service-list li {
+  .operating-loop li {
     padding-block: 1.15rem;
-    grid-template-columns: 3.6rem 1.5rem 1fr;
-    gap: 0.6rem;
+    grid-template-columns: 3rem 1fr;
+    gap: 1rem;
   }
   .career li {
     min-height: auto;
@@ -1406,12 +1427,6 @@ html[data-theme="matrix"] .beyond .path-line {
 @media (max-width: 390px) {
   .hero__actions .button {
     width: 100%;
-  }
-  .service-list li {
-    grid-template-columns: 1fr 1fr;
-  }
-  .service-list li > div {
-    grid-column: 1 / -1;
   }
 }
 
