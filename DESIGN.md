@@ -9,7 +9,7 @@ The site is a project-first portfolio with details borrowed from a carefully cus
 1. Slim workstation panel with normal page links.
 2. Human introduction, a mixed professional/personal system summary, and an optional terminal Easter egg.
 3. Selected Work led by real Wise Owl evidence and three distinct technical specimens.
-4. Active engineering focus presented as running services.
+4. Engineering approach presented as an operating loop from constraints through feedback.
 5. Career progression presented as a readable journal.
 6. Working defaults beside a selective public record.
 7. Brief personal home directory and direct contact close.

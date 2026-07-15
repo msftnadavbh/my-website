@@ -332,18 +332,20 @@ export default function Home() {
         >
           <div className="shell focus__grid">
             <div className="focus__intro">
-              <p className="path-line">systemctl --user status</p>
-              <h2 id="focus-heading">What is running now.</h2>
+              <p className="path-line">~/operating-loop</p>
+              <h2 id="focus-heading">{site.focus.title}</h2>
               <p>{site.focus.introduction}</p>
               <p className="interest-line">
+                <span>current signals</span>
                 {site.focus.interests.join(" / ")}
               </p>
             </div>
-            <ol className="service-list">
+            <ol className="operating-loop">
               {site.focus.loop.map((step, index) => (
                 <li key={step.title}>
-                  <span className="service-state">active</span>
-                  <span className="service-index">0{index + 1}</span>
+                  <span className="loop-index">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
                   <div>
                     <h3>{step.title}</h3>
                     <p>{step.text}</p>
