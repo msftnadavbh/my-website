@@ -51,7 +51,10 @@ export default function Home() {
       <main id="main-content">
         <section className="hero" id="top">
           <div className="shell hero__inner">
-            <p className="role-line">Senior Solution Engineer at Microsoft</p>
+            <p className="hero__name">{site.profile.name}</p>
+            <p className="role-line">
+              {site.profile.role} at {site.profile.organization}
+            </p>
             <h1>
               I turn cloud and AI architecture into systems teams can ship,
               operate, and trust.
