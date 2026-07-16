@@ -4,6 +4,7 @@ import {
   Azeret_Mono,
   Geologica,
 } from "next/font/google";
+import { AnalyticsConsent } from "@/components/analytics-consent";
 import { site } from "@/content/site";
 import { shouldIndex, siteUrl } from "@/lib/site-url";
 import "./globals.css";
@@ -29,16 +30,26 @@ const mono = Azeret_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Nadav Ben-Haim | Cloud, Kubernetes, AI & Developer Tools",
+  title: "Nadav Ben-Haim | Senior Solution Engineer",
   description:
-    "Senior Solution Engineer at Microsoft building cloud platforms, developer tools, and reliable AI-assisted engineering workflows.",
-  alternates: { canonical: "/" },
+    "Senior Solution Engineer at Microsoft turning cloud and AI architecture into systems teams can ship, operate, and trust.",
+  alternates: {
+    canonical: "/",
+    types: {
+      "application/rss+xml": [
+        { title: "Nadav Ben-Haim — Field notes", url: "/feed.xml" },
+      ],
+    },
+  },
+  verification: process.env.GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+    : undefined,
   authors: [{ name: site.profile.name, url: site.profile.linkedin }],
   creator: site.profile.name,
   openGraph: {
     type: "profile",
     url: "/",
-    title: "Nadav Ben-Haim | Systems that work beyond the diagram",
+    title: "Nadav Ben-Haim | Senior Solution Engineer",
     description:
       "Cloud architecture, Kubernetes platforms, developer productivity, and AI-assisted engineering.",
     siteName: site.profile.name,
@@ -83,7 +94,12 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: themeScript }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <AnalyticsConsent
+          measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}
+        />
+      </body>
     </html>
   );
 }
