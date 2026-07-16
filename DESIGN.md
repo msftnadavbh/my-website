@@ -7,12 +7,11 @@ The site is a project-first portfolio with details borrowed from a carefully cus
 ## Page sequence
 
 1. Slim workstation panel with normal page links.
-2. Human introduction, a mixed professional/personal system summary, and an optional terminal Easter egg.
-3. Selected Work led by real Wise Owl evidence and three distinct technical specimens.
-4. Engineering approach presented as an operating loop from constraints through feedback.
-5. Career progression presented as a readable journal.
-6. Working defaults beside a selective public record.
-7. Brief personal home directory and direct contact close.
+2. Direct principal-level positioning and two recruiter-focused actions.
+3. Three editorial case-study rows with ownership, decisions, verification, and public artifacts.
+4. The latest field note and a compact credibility chapter.
+5. Optional terminal Easter egg below the primary proof.
+6. LinkedIn-only contact close.
 
 ## Palette
 
@@ -39,11 +38,11 @@ Mono remains a technical accent rather than the default reading font.
 
 ## Terminal
 
-The terminal is a secondary interactive joke with native form controls. It supports `help`, `whoami`, `uname -a`, `ls ~/projects`, `cat ~/now`, `ls ~/after-hours`, `sudo hire nadav`, and `clear`. Suggested commands make it discoverable, unknown commands receive a shell-style response, and no page content or navigation depends on it.
+The terminal is a secondary interactive joke below the proof sections, with native form controls. It supports `help`, `whoami`, `uname -a`, `ls ~/projects`, `cat ~/now`, `ls ~/after-hours`, `sudo hire nadav`, and `clear`. Suggested commands make it discoverable, unknown commands receive a shell-style response, and no page content or navigation depends on it.
 
 ## Project evidence
 
-Wise Owl uses its real workflow image. AzurePricingMCP uses a structured MCP-call specimen, Sayonara uses a migration sequence, and GHAS Zero to Hero Workshop uses a runbook. These visuals explain each project's shape without inventing live output or metrics. The personal chapter presents salsa, Japanese study, and retro-system interests as readable after-hours pursuits rather than decorative desktop art.
+Wise Owl uses its real workflow image. AzurePricingMCP uses a structured MCP-call specimen, and Sayonara uses its migration sequence. Dedicated case-study routes preserve ownership, constraints, decisions, implementation, verification, lessons, technologies, credit, and repository sources without inventing live output or metrics. Typed local field notes use the same static content model, starting with “Production has veto power.”
 
 ## Constraints
 

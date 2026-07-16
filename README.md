@@ -11,7 +11,7 @@ A focused personal website for Nadav Ben-Haim, Senior Solution Engineer at Micro
 - Native CSS for the visual system and restrained motion
 - Vercel for preview and production hosting
 
-The page is statically generated where practical. It has no backend, database, analytics, tracking cookies, or required runtime secrets.
+The pages are statically generated where practical. The site has no backend, database, contact form, or required runtime secrets. Optional GA4 analytics stays unloaded until a visitor accepts it.
 
 ## Local development
 
@@ -47,9 +47,16 @@ vercel deploy
 
 Preview deployments are marked `noindex, nofollow`. Production deployments are indexable and publish a sitemap. Set `SITE_URL` only when a stable custom canonical URL should override Vercel's production URL.
 
+Optional deployment variables:
+
+- `NEXT_PUBLIC_GA_MEASUREMENT_ID`: enables the consent prompt and GA4 after acceptance.
+- `GOOGLE_SITE_VERIFICATION`: adds the Search Console verification metadata.
+- `SITE_URL`: overrides the production canonical origin.
+
 ## Updating content
 
-- Profile, current focus, projects, career entries, principles, and recognition: [`content/site.ts`](content/site.ts)
+- Profile, career, and recognition: [`content/site.ts`](content/site.ts)
+- Case studies and field notes: [`content/growth.ts`](content/growth.ts)
 - Page composition: [`app/page.tsx`](app/page.tsx)
 - Visual system and responsive behavior: [`app/globals.css`](app/globals.css)
 - Metadata and structured data: [`app/layout.tsx`](app/layout.tsx)
@@ -75,6 +82,7 @@ The Wise Owl workflow image is copied from the [MIT-licensed Wise Owl repository
 - High-contrast text and controls
 - Content remains available without the optional terminal interaction
 - The optional Matrix mode is a real pressed-state button, persists locally, and never gates content
+- Optional GA4 makes no network request before explicit acceptance and records no form or profile data
 - Motion and smooth scrolling are disabled when `prefers-reduced-motion` is enabled; Matrix glyphs become static
 - Responsive layouts are reflowed rather than scaled down
 
