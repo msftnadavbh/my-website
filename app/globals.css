@@ -306,6 +306,15 @@ html[data-theme="matrix"] .matrix-rain {
 .hero h1 {
   max-width: 16ch;
 }
+.hero__name {
+  margin-bottom: 0.45rem;
+  color: var(--orange-dark);
+  font-family: var(--font-display-stack);
+  font-size: clamp(2.2rem, 4vw, 3.8rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
 .hero .role-line {
   color: var(--aubergine);
 }
